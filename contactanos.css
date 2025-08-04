@@ -1,0 +1,209 @@
+body {  border: 0;
+        margin: 0;}
+
+header {display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 10px solid #D9D9D9;
+        height: 70px;
+        position: block;}
+
+header a {
+        text-decoration: none;
+        color: black;
+}
+
+.icono {width: 28px;
+        height: 28px;
+        margin-right: 8px;}
+
+.navegacion {display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                font-size: 13px;
+                width: 160px;}
+
+.item-navegacion {font-family: "Neuton", serif;
+                        font-weight: 200;
+                        color: #979696}
+
+.separacion { color: #979696;
+                padding: 0 5px;}
+
+.icono-principal {display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-family:"Monsieur La Doulaise", cursive;
+                font-weight: 500;
+                font-style: normal;}
+
+.iconos-header {display: flex;
+                flex-direction: row;
+                align-items: center;}
+
+
+
+
+
+
+
+
+
+
+footer {display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        height: 70px;
+        margin-top: 30px;
+        font-family: "Days One", sans-serif;
+        font-weight: 400;
+        font-style: normal}
+
+@media (min-width: 769px){
+        .acercademif {
+                display: none;}
+        .contactof {
+                display: none;}
+        .facebook-i{
+                display: none;
+        }
+        .facebook-l{
+                display: none;
+        }
+        .instagram-i{
+                display: none;
+        }
+        .instagram-l{
+                display: none;
+        }
+        .x-i{
+                display: none;
+        }
+        .x-l{
+                display: none;
+        }
+        .linkedin-i{
+                display: none;
+        }
+        .linkedin-l{
+                display: none;
+        }
+}
+
+@media (max-width: 768px) {
+
+        .navegacion {
+                display:none
+        }
+        .iconos-header{
+                display:none
+        }
+
+footer {display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 250px;}
+
+.derechos {
+        grid-area: 5/1/7/7;
+        text-align: center;
+        background-color: #a4a1a1;}
+
+.facebook-i {
+        display: flex;
+        justify-content: end;
+        grid-area: 1/4/2/5;     
+}
+.instagram-i {
+        display: flex;
+        justify-content: end;
+        grid-area: 2/4/3/5;
+        
+        
+}
+.x-i {
+        display: flex;
+        justify-content: end;
+        grid-area: 3/4/4/5;
+        
+        
+}
+.linkedin-i {
+        display: flex;
+        justify-content: end;
+        grid-area: 4/4/5/5;
+        
+        
+}
+
+.facebook-l {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        grid-area: 1/5/2/7;
+        color: black;
+        font-family:"Dela Gothic One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: small;}
+
+
+.instagram-l {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        grid-area: 2/5/3/7;
+        color: black;
+        font-family:"Dela Gothic One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: small;}
+
+.x-l {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        grid-area: 3/5/4/7;
+        color: black;
+        font-family:"Dela Gothic One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: small;}
+
+.linkedin-l {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        grid-area: 4/5/5/7;
+}
+
+.acercademif {
+        display: flex;
+        justify-content: end;
+        grid-area: 1/1/2/2;
+        font-family: "Neuton", serif;
+        font-weight: 200;
+}
+
+.contactof {
+        display: flex;
+        justify-content: start;
+        grid-area: 1/2/2/3;
+        font-family: "Neuton", serif;
+        font-weight: 200;
+}
+
+footer a {
+        color: black;
+        font-family:"Dela Gothic One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: small;
+        text-decoration: none;
+}
+
+
+}
