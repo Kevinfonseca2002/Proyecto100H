@@ -21,7 +21,7 @@ header a {
                 flex-direction: row;
                 justify-content: left;
                 align-items: center;
-                font-size: 13px;
+                font-size: 18px;
                 width: 160px;}
 
 .item-navegacion {font-family: "Neuton", serif;
@@ -43,10 +43,64 @@ header a {
                 align-items: center;}
 
 
+.autobiografia { 
+        display: grid;
+        grid-template-columns: 25% 75%;
+        }
 
+main img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        }
 
+#foto{
+   width: 100%;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 1) 90%, 
+    rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 1) 60%, 
+    rgba(0, 0, 0, 0) 100%);
+}
 
+.Foto-personal {
+        /* background-image: url(./Imagenes-proyecto100h/Foto_acercademi.jpg);
+        background-image: linear-gradient(to right 0.9);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+        grid-column: 1/2;
+        justify-content: start;
+        height: 100%;
+        width: 100%;
+}
 
+.informacionsobremi {
+        grid-column: 2/3;
+        margin: 20px 50px 20px 50px;
+}
+
+.Tituloprincipal { 
+        font-family: "Days One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+}
+
+.titulo-secundario {
+        font-family: "Days One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+}
+
+.informacionsobremi article {
+        font-family: "Bitter", serif;
+        font-optical-sizing: auto;
+        font-size: 20px;
+}
 
 
 footer {display: flex;
@@ -93,6 +147,29 @@ footer {display: flex;
 
 @media (max-width: 768px) {
 
+        .autobiografia {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+        }
+
+        .Foto-personal {
+                text-align: center;
+                width: 350px;
+                height: 350px;
+                clip-path:circle(50%) ;
+                margin: 50px 30px 15px;}
+
+        #foto {
+        width: 100%;
+        height: 100%;
+        -webkit-mask-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 1) 100%, 
+        rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 1) 100%, 
+        rgba(0, 0, 0, 0) 100%);
+        }
         .navegacion {
                 display:none
         }

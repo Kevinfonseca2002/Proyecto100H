@@ -21,7 +21,7 @@ header a {
                 flex-direction: row;
                 justify-content: left;
                 align-items: center;
-                font-size: 13px;
+                font-size: 18px;
                 width: 160px;}
 
 .item-navegacion {font-family: "Neuton", serif;
@@ -89,6 +89,7 @@ header a {
 
 .container1i {
         grid-area: 1/2/2//3;
+        width:90%;
 }
 
 .container2l {
@@ -98,6 +99,7 @@ header a {
 
 .container2i {
         grid-area: 2/2/3//3;
+        width:90%;
 }
 
 .container3l {
@@ -107,6 +109,7 @@ header a {
 
 .container3i {
         grid-area: 3/2/4//3;
+        width:90%;
 }
 
 .container4l {
@@ -116,6 +119,7 @@ header a {
 
 .container4i {
         grid-area: 4/2/5//3;
+        width:90%;
 }
 
 .container5l {
@@ -125,6 +129,7 @@ header a {
 
 .container5i {
         grid-area: 5/2/6//3;
+        width:90%;
 }
 
 .container6l {
@@ -134,6 +139,7 @@ header a {
 
 .container6i {
         grid-area: 6/2/7//3;
+        width:90%;
         
 }
 .boton img {
@@ -143,29 +149,30 @@ header a {
 }
 
 .iconoenviar {
-        padding-top: 3px;
+        padding: 3px 0 0 15px;
 }
 
-.boton button{
-        border: none;
+.boton{
+        width: 160px;
         background-color: #3E00F9;
         font-family:"Dela Gothic One", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 18px;
         color: #ffff;
-}
-
-.boton {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         border: solid black;
-        width: 120px;
         margin: 0 auto;
-        padding: 10px;
+        padding: 3px;
         border-radius: 25px;
-        background-color: #3E00F9;}
+        background-color: #3E00F9;
+}
+.botonContainer{
+display: grid;
+grid-area: 7/1/8/3;
+}
 
 
 

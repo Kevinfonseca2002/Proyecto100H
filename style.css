@@ -21,7 +21,7 @@ header a {
                 flex-direction: row;
                 justify-content: left;
                 align-items: center;
-                font-size: 13px;
+                font-size: 18px;
                 width: 160px;}
 
 .item-navegacion {font-family: "Neuton", serif;
@@ -88,8 +88,15 @@ header a {
 .trabajo-fotografico .boreal {display: grid;
         grid-template-columns: 70% 30%;
         grid-template-rows: 500px;
-        margin-bottom: 80px;
+        margin:0 30px 80px 30px;
         border: solid black;
+        opacity: 0.3;
+        transition-property:backround-color, opacity, color, width, height, transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        cursor: pointer;
+        background-color: #9c7ef6;
+        transform: none;
 }
 
 .trabajo-fotografico .boreal-titulo {display: flex;
@@ -100,24 +107,29 @@ header a {
                                 font-family:"Dela Gothic One", sans-serif;
                                 font-weight: 400;
                                 font-style: normal;
-                                background-color: #9c7ef6;
-                                cursor: pointer;
-                                opacity: 0.5;
-                                transition-property:backround-color, opacity, color;
-                                transition-duration: 0.3s;
-                                transition-timing-function: ease-in;
+
+
                         }
 
-.trabajo-fotografico .boreal-titulo:hover {opacity: 1;
-                                        background-color: #3E00F9;
-                                        color: #ffff;}
+.trabajo-fotografico .boreal:hover {opacity: 1;
+                                background-color: #3E00F9;
+                                color: #ffff;
+                                transform: scale(1.02);}
 
 
 .trabajo-fotografico .polo {display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 500px;
-        margin-bottom: 80px;
-        border: solid black
+        margin:0 30px 80px 30px;
+        border: solid black;
+        opacity: 0.3;
+        transition-property:backround-color, opacity, color, width, height, transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        cursor: pointer;
+        background-color: #9c7ef6;
+        transform: none;
+
 }
 
 .trabajo-fotografico .polo-titulo {display: flex;
@@ -127,22 +139,25 @@ header a {
                                 text-align: center;
                                 font-family:"Dela Gothic One", sans-serif;
                                 font-weight: 400;
-                                font-style: normal;cursor: pointer;
-                                background-color: #9c7ef6;
-                                opacity: 0.5;
-                                transition-property:backround-color, opacity, color;
-                                transition-duration: 0.3s;
-                                transition-timing-function: ease-in}
+                                font-style: normal;}
 
-.trabajo-fotografico .polo-titulo:hover {opacity: 1;
-                                        background-color: #3E00F9;
-                                        color: #ffff;}
+.trabajo-fotografico .polo:hover {opacity: 1;
+                                background-color: #3E00F9;
+                                color: #ffff;
+                                transform: scale(1.02);}
 
 .trabajo-fotografico .montaña {display: grid;
         grid-template-columns: 70% 30%;
         grid-template-rows: 500px;
-        margin-bottom: 80px;
-        border: solid black
+        margin:0 30px 80px 30px;
+        border: solid black;
+        opacity: 0.3;
+        transition-property:backround-color, opacity, color, width, height, transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        cursor: pointer;
+        background-color: #9c7ef6;
+        transform: none;
 }
 
 .trabajo-fotografico .montaña-titulo {display: flex;
@@ -153,22 +168,25 @@ header a {
                                 font-family:"Dela Gothic One", sans-serif;
                                 font-weight: 400;
                                 font-style: normal;
-                                cursor: pointer;
-                                background-color: #9c7ef6;
-                                opacity: 0.5;
-                                transition-property:backround-color, opacity, color;
-                                transition-duration: 0.3s;
-                                transition-timing-function: ease-in}
+}
 
-.trabajo-fotografico .montaña-titulo:hover {opacity: 1;
-                                        background-color: #3E00F9;
-                                        color: #ffff;}
+.trabajo-fotografico .montaña:hover {opacity: 1;
+                                background-color: #3E00F9;
+                                color: #ffff;
+                                transform: scale(1.02);}
 
 .trabajo-fotografico .sabana {display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 500px;
-        margin-bottom: 80px;
-        border: solid black
+        margin:0 30px 80px 30px;
+        border: solid black;
+        opacity: 0.3;
+        transition-property:backround-color, opacity, color, width, height, transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        cursor: pointer;
+        background-color: #9c7ef6;
+        transform: none;
 }
 
 .trabajo-fotografico .sabana-titulo {display: flex;
@@ -179,16 +197,12 @@ header a {
                                 font-family:"Dela Gothic One", sans-serif;
                                 font-weight: 400;
                                 font-style: normal;
-                                cursor: pointer;
-                                background-color: #9c7ef6;
-                                opacity: 0.5;
-                                transition-property:backround-color, opacity, color;
-                                transition-duration: 0.3s;
-                                transition-timing-function: ease-in}
+                                }
 
-.trabajo-fotografico .sabana-titulo:hover {opacity: 1;
-                                        background-color: #3E00F9;
-                                        color: #ffff;}
+.trabajo-fotografico .sabana:hover {opacity: 1;
+                                background-color: #3E00F9;
+                                color: #ffff;
+                                transform: scale(1.02);}
 
 
 
@@ -242,29 +256,66 @@ footer {display: flex;
         .iconos-header{
                 display:none
         }
-        .trabajo-fotografico .boreal {
+.trabajo-fotografico .boreal {
                 margin:0 150px 60px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 300px 300px;
+                opacity: 1;
+                transform: none;
+                color: #ffff;
+                background-color: #3E00F9;
+                cursor:default;
         }
 
+.trabajo-fotografico .boreal:hover {
+        transform: none;
+}
 .trabajo-fotografico .polo {
                 margin:0 150px 60px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 300px 300px;
+                opacity: 1;
+                transform: none;
+                color: #ffff;
+                background-color: #3E00F9;
+                cursor:default;
         }
+
+.trabajo-fotografico .polo:hover {
+        transform: none;
+}
 
 .trabajo-fotografico .montaña {
                 margin:0 150px 60px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 300px 300px;
+                opacity: 1;
+                transform: none;
+                color: #ffff;
+                background-color: #3E00F9;
+                cursor:default;
         }
+
+
+.trabajo-fotografico .montaña:hover {
+        transform: none;
+}
 
 .trabajo-fotografico .sabana {
                 margin:0 150px 60px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 300px 300px;
+                opacity: 1;
+                transform: none;
+                color: #ffff;
+                background-color: #3E00F9;
+                cursor:default;
         }
+
+
+.trabajo-fotografico .sabana:hover {
+        transform: none;
+}
 footer {display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
