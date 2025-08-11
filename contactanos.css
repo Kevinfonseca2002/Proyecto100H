@@ -168,6 +168,7 @@ header a {
         padding: 3px;
         border-radius: 25px;
         background-color: #3E00F9;
+        cursor: pointer
 }
 .botonContainer{
 display: grid;
