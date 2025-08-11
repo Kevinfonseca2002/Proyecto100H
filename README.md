@@ -1,0 +1,1 @@
+Proyecto destinado a la presentacion de mis primeras 100 horas del curso de desarrollo web fullstack en el cual podran visualizar mis habilidades con herramientas como: HTML, CSS y JavaScript con apoyo artistico de otras plataformas como: Google Fonts, BeHance y Flaticon.
